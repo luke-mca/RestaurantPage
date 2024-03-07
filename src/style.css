@@ -1,0 +1,161 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Jacquarda+Bastarda+9&display=swap');
+
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
+
+:root {
+    --dark-green: #008B47;
+    --light-green: #6BB64A;
+    --yellow: #F8CD24;
+    --white: #FDFFF5; 
+    font-family: 'Josefin Sans', sans-serif;
+}
+html {
+    min-height: 100vw;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    margin: 0px;
+}
+button {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+
+header {
+    height: 80px;
+    background-color: var(--white);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--dark-green);
+    font-family: 'Jacquarda Bastarda 9', sans-serif;
+}
+header>img {
+    height: 70px;
+    width: 70px;
+    padding: 5px;
+}
+header>nav>button {
+    font-size: 20px;
+    border: 0px;
+    border-radius: 4px;
+    background-color: transparent;
+    margin: 2px;
+    font-weight: 700;
+    color: var(--white);
+}
+header>nav>button:active {
+    color: var(--light-green);
+}
+
+
+
+#content {
+    min-height: calc(100vh - 120px);
+    position: relative;
+    background-color: var(--white);
+    padding: 24px;
+    padding-top: 0px;
+}
+#title {
+    height: 48px;
+    font-weight: 700;
+    font-size: 32px;
+    padding: 12px;
+    padding-bottom: 0px;
+    color: var(--dark-green);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#image-display {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--white);
+    gap: 4px;
+}
+body::-webkit-scrollbar {
+    display: none;
+}
+.big-box {
+    display: flex;
+    flex-direction: row;
+}
+.img-box {
+    width: calc(100%-24px);
+    padding: 30px;
+}
+.img-box>img{
+    max-width: 300px;
+    max-height: 300px;
+    height: auto;
+    border-radius: 12px;
+}
+.image-descrip {
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 24px;
+}
+.image-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+
+#description {
+    font-size: 16px;
+    padding: 14px;
+    padding-top: 0px;
+    word-spacing: 2px;
+    line-height: 28px;
+}
+#bottomHome {
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+#hours {
+    padding: 14px;
+}
+#hours>p {
+    text-indent: 0px;
+}
+#location {
+    padding: 14px;
+}
+#locationImage>img {
+    width: 300px;
+}
+p {
+    text-indent: 28px;
+}
+
+#owner {
+    margin-top: 108px;
+}
+
+
+
+
+#footer {
+    position: fixed;
+    width: 100vw;
+    bottom: 0px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--dark-green);
+    color: var(--white);
+}
